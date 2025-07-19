@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="scoring_window.css">
+    <head> 
+        <div>
+            <h1 id="score"> Total Score: 0</h1>
+            <button id = "LOPButton"> Lack Of Progress </button>
+            <label id = "LOPCount">Total Count: 0</label>
+        </div>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="closeXButton"class="closeButton">&times;</span>
+                <br>
+                <p id="modalMessage"> </p>
+                <br>
+                <button id = "modalConfirm">Confirm </button>
+                <button class="closeButton">Cancel </button>
+            </div>
+        </div>
+    </head>
+
+    <body>
+        <div id="intersection">
+            <h3 style ="display: inline-block">Intersection</h3>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+            <br>
+            <div id="intersection1">
+                <label for="intersection1">Intersection 1: </label>
+                <input type="checkbox" name="intersection1" >
+                <br>
+            </div>
+            <div id="intersection2">
+                <label for="intersection2">Intersection 2: </label>
+                <input type="checkbox" name="intersection2" >
+                <br>
+            </div>
+            <div id="intersection3">
+                <label for="intersection3">Intersection 3: </label>
+                <input type="checkbox" name="intersection3" >
+                <br>
+            </div>
+        </div>
+        <div id="obstacle">
+            <h3 style="display:inline-block">Obstacle</h3>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+            <br>
+            <div id="obstacle1">
+                <label for="obstacle1">Obstacle 1: </label>
+                <input type="checkbox" name="obstacle1" >
+                <br>
+            </div>
+            <div id="obstacle2">
+                <label for="obstacle2">Obstacle 2: </label>
+                <input type="checkbox" name="obstacle2" >
+                <br>
+            </div>
+        </div>
+        <div id="gap">
+            <h3 style ="display: inline-block">Gap</h3>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+            <br>
+            <div id="gap1">
+                <label for="gap1">Gap 1: </label>
+                <input type="checkbox" name="gap1" >
+                <br>
+            </div>
+            <div id="gap2">
+                <label for="gap2">Gap 2: </label>
+                <input type="checkbox" name="gap2" >
+                <br>
+            </div>
+        </div>
+        <div id="speed bump">
+            <h3 style ="display: inline-block">Speed Bump</h3>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+            <br>
+            <div id="speed bump1">
+                <label for="speed bump1">Speed bump 1: </label>
+                <input type="checkbox" name="speed bump1">
+                <br>
+            </div>
+            <div id="speed bump2">
+                <label for="speed bump2">Speed bump 2: </label>
+                <input type="checkbox" name="speed bump2" >
+                <br>
+            </div>
+        </div>
+        <div id="ramp">
+            <h3 style ="display: inline-block">Ramp</h3>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+            <br>
+            <div id="ramp1">
+                <label for="ramp1">Ramp 1: </label>
+                <input type="checkbox" name="ramp1">
+                <br>
+            </div>
+            <div id="ramp2">
+                <label for="ramp2">Ramp 2: </label>
+                <input type="checkbox" name="ramp2" >
+                <br>
+            </div>
+        </div>
+        <div id="checkpoint">
+            <h3 style ="display: inline-block">Checkpoint</h3>
+            <button class="add">Add</button>
+            <button class="remove">Remove</button>
+            <br>
+            <div id="checkpoint1">
+                <label for="checkpoint1">Checkpoint 1 (0 Lack of Progress): </label>
+                <input type="checkbox" name="checkpoint1" >
+                <br>
+            </div>
+            <div id="checkpoint2">
+                <label for="checkpoint2">Checkpoint 2 (0 Lack of Progress): </label>
+                <input type="checkbox" name="checkpoint2" >
+                <br>
+            </div>
+            <div id="checkpoint3">
+                <label for="checkpoint3">Checkpoint 3 (0 Lack of Progress): </label>
+                <input type="checkbox" name="checkpoint3" >
+                <br>
+            </div>
+        </div>
+        <div id="rescuekit">
+            <h3 style ="display: inline-block">Rescue Kit</h3>
+            <br>
+            <div id="kitLevel">
+                <label for="livevictim">Rescue kit level: </label>
+                <input type="number" name="kitLevel" min="1" max="2">
+                <!--button class="submitLevel">Submit</button!-->
+            </div>
+            <div id="kit">
+                <label for="kit">Rescue kit: </label>
+                <input type="checkbox" name="kit" >
+                <br>
+            </div>
+        </div>
+        <div id="victim">
+            <h3 style ="display: inline-block">Victims</h3>
+            <button class="submitVic">Submit Victims</button>
+            <br>
+            <div id="level">
+                <label id="evacLevel">Evacuation Level: </label>
+                <input type="number" name="level" min="1" max="2">
+                <button class="submitLevel">Submit</button>
+            </div>
+            <div id="livevictim">
+                <label for="livevictim">Live victims: </label>
+                <input type="number" name="livevictim" min="0" max="2">
+                <br>
+            </div>
+            <div id="deadvictim">
+                <label for="deadvictim">Dead victims: </label>
+                <input type="number" name="deadvictim" min="0" max="1">
+                <br>
+            </div>
+        </div>
+        <div id="finish">
+            <h3 style ="display: inline-block">Finish Run</h3>
+            <button class="submitFinal">Submit</button>
+            <br>
+            <div id="exitBonus">
+                <label for="exitBonus">Exit bonus: </label>
+                <input type="checkbox" name="exitBonus">
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="scoring_window.js"></script>

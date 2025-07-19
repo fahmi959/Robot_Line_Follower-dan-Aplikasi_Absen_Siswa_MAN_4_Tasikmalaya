@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "366253423906",
+    "firebase_url": "https://absen-siswa-man-4-tasik-default-rtdb.firebaseio.com",
+    "project_id": "absen-siswa-man-4-tasik",
+    "storage_bucket": "absen-siswa-man-4-tasik.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366253423906:android:52445a680d454e042d797b",
+        "android_client_info": {
+          "package_name": "com.presensisiswainformatikabyfahmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366253423906-2860creva0sd10g03kr5ghc389ukfqvp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.presensisiswainformatikabyfahmi",
+            "certificate_hash": "ba6ecec67e1817420a5322228503449ecd3c23fa"
+          }
+        },
+        {
+          "client_id": "366253423906-hakf300sjod450mr1au8qvti13l8ass1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-VBhydb1Ob3i46aAfaRMmNwgZjY2dsSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366253423906-hakf300sjod450mr1au8qvti13l8ass1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
